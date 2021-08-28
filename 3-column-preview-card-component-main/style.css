@@ -22,7 +22,7 @@ h3{
 }
 .sz-box{
     height: auto;
-    padding: 2rem 1rem;
+    padding: 3rem 0.8rem;
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 15px;
     font-family: 'Lexend Deca', sans-serif;
@@ -30,10 +30,6 @@ h3{
 }
 .sz-box p{
    height: 7rem;
-   border: 1px solid red;
-}
-.space{
-    border: 1px solid red;
 }
 .sedans{
     background-color: hsl(31, 77%, 52%);
@@ -54,7 +50,7 @@ h3{
     border-radius: 18px;
     outline: none;
     border: none;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .btn-sedan{
     color: hsl(31, 77%, 52%);
