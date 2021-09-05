@@ -14,11 +14,11 @@ body{
 }
 .main-color{
     color: hsl(0, 0%, 100%);
+    font-weight: 700; 
 }
 .container{
-    border: 1px solid red;
     display: grid;
-    height:95vh;
+    height:auto;
     width:80vw;
     grid-template-columns:[x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr;
     grid-template-rows:[y0] 1fr [y1] 1fr [y2] 1.5fr [y3] .5fr; 
@@ -41,13 +41,14 @@ body{
 .third{
     grid-row:y3/y4;
     grid-column:x0/x4;
-    border: 1px solid yellow;
     border-radius: 0 0 10px 10px;
     color: #fff;
     text-align: center;
 }
 .attribution{
     margin-bottom: 1rem;
+    padding-top:1rem ;
+
 }
 .title{
     font-size: 700;
@@ -67,14 +68,34 @@ body{
 .rates{
     text-align: center;
     color: hsla(0, 0%, 100%, 0.6);
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
 }
 article{
-    margin-top: 1rem;
+    padding-top: 1.4rem;
 }
-@media (min-width: 600px) {
-    .container {
-        height: 50vh;
+.text-p{
+    font-size: 0.8rem;  
+}
+@media (min-width: 500px) {
+    .container{
+        grid-template-rows:[y0] 1fr [y1] 1.5fr [y2] 1.5fr [y3] 1fr; 
+    }
+    .one {
+        grid-column:x0/x4;
+        grid-row:y1/y2;
+    }
+    .two {
+        grid-row:y2/y3;
+        grid-column:x0/x4;
+        padding: 4rem 0 2rem 1rem;
+    }
+}
+@media (min-width: 800px) {
+.container {
         width:70vw;
+        font-size: 1.01rem;
+        height: 50vh;
     }
 .one {
     background-image: url(./images/image-header-desktop.jpg);
@@ -85,7 +106,22 @@ article{
 .two {
     grid-column:x0/x2;
     grid-row:y0/y3;
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px;  
+}
+.attribution{
+    padding-top:1rem ;
+}
+.title, .ph{
+    text-align: left;
+    padding: 1rem 1rem 1rem 1.2rem;
+}
+.rates{
+    text-align: left;
+    padding-left:1rem ;
+    margin-top: 2rem;
+}
+article{
+    display: inline-block;
+    margin-right: 1rem;
 }
 }
-  
